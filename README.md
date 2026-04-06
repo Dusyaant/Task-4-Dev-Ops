@@ -25,10 +25,6 @@ bash scripts/check_status.sh
 * If status code is between **200–399 → Success**
 * Otherwise → Failure
 
-### 📷 Output
-
-![HTTP Status Output](screenshots/01-http-status-success.png)
-
 ---
 
 ## 🛠️ Task 2: Text Processing using sed
@@ -50,10 +46,6 @@ bash scripts/text_replace.sh sample.txt
   * Line range: `5,$`
   * Condition: `/welcome/`
   * Replacement: `s/give/learning/g`
-
-### 📷 Output
-
-![Text Processing Output](screenshots/02-sed-text-processing.png)
 
 ---
 
