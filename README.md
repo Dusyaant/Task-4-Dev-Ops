@@ -58,18 +58,6 @@ bash scripts/text_replace.sh sample.txt
 
 ---
 
-## 📷 Outputs
-
-### 🔹 HTTP Status Check
-
-![HTTP Output](screenshots/01-http-status-success.png)
-
-### 🔹 Text Processing
-
-![Text Output](screenshots/02-sed-text-processing.png)
-
----
-
 ## 📁 Project Structure
 
 ```
