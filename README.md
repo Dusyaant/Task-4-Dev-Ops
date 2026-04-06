@@ -98,5 +98,5 @@ chmod +x scripts/*.sh
 
 ## 📎 Author
 
-Pros 🚀
+Dusyaant R 🚀
 
