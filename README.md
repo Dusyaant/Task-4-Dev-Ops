@@ -27,7 +27,7 @@ bash scripts/check_status.sh
 
 ### 📷 Output
 
-![HTTP Status Output](screenshots/mv your_image1.png 01-http-status-success.png)
+![HTTP Status Output](screenshots/01-http-status-success.png)
 
 ---
 
