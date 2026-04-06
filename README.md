@@ -1,17 +1,20 @@
-# 🐚 Shell Scripting Tasks
+# 🐚 Shell Scripting Automation Tasks
 
 ## 📌 Overview
 
-This repository contains basic shell scripting tasks focused on:
+This project demonstrates basic automation using shell scripting.
+It includes:
 
-* Checking HTTP status of a website
-* Performing conditional text replacement using `sed`
+* Checking HTTP status of a website using `curl`
+* Performing conditional text processing using `sed`
+
+The goal is to understand real-world scripting concepts like network validation and file manipulation.
 
 ---
 
 ## 🚀 Task 1: HTTP Status Checker
 
-This script fetches the HTTP status code of **guvi.in** and prints a success/failure message based on the response.
+This script fetches the HTTP status code of **guvi.in** and prints whether the website is reachable.
 
 ### ▶️ Run
 
@@ -19,18 +22,23 @@ This script fetches the HTTP status code of **guvi.in** and prints a success/fai
 bash scripts/check_status.sh
 ```
 
-### 🧠 Logic
+### 🧠 How It Works
 
-* Uses `curl` to get HTTP status code
-* If status code is between **200–399 → Success**
-* Otherwise → Failure
+* Uses `curl` to fetch HTTP status code
+* Checks if the code is between **200–399**
+* Prints:
+
+  * ✅ Success → Website is reachable
+  * ❌ Failure → Website is not reachable
+
+> Note: Status code **301** indicates a redirect but is still considered reachable.
 
 ---
 
 ## 🛠️ Task 2: Text Processing using sed
 
 This script replaces all occurrences of the word **"give"** with **"learning"**
-➡️ From **line 5 to end of file**
+➡️ From **line 5 onwards**
 ➡️ Only in lines containing the word **"welcome"**
 
 ### ▶️ Run
@@ -39,13 +47,26 @@ This script replaces all occurrences of the word **"give"** with **"learning"**
 bash scripts/text_replace.sh sample.txt
 ```
 
-### 🧠 Logic
+### 🧠 How It Works
 
-* Uses `sed` with:
+* Uses `sed` command
+* Applies:
 
   * Line range: `5,$`
   * Condition: `/welcome/`
   * Replacement: `s/give/learning/g`
+
+---
+
+## 📷 Outputs
+
+### 🔹 HTTP Status Check
+
+![HTTP Output](screenshots/01-http-status-success.png)
+
+### 🔹 Text Processing
+
+![Text Output](screenshots/02-sed-text-processing.png)
 
 ---
 
@@ -67,10 +88,9 @@ shell-scripting-tasks/
 
 ---
 
-## ⚠️ Notes
+## ⚙️ Setup Notes
 
-* HTTP status **301** indicates a redirect but still considered reachable
-* Ensure scripts have execution permission:
+Before running scripts, ensure execution permission:
 
 ```bash
 chmod +x scripts/*.sh
@@ -78,16 +98,17 @@ chmod +x scripts/*.sh
 
 ---
 
-## 🧠 Concepts Used
+## 🔥 Key Learnings
 
-* Bash scripting
-* curl
-* sed
-* Conditional logic
-* File manipulation
+* Handling HTTP responses using `curl`
+* Using `sed` with conditions and line ranges
+* Debugging shell script errors
+* Understanding environment differences (Ubuntu vs Windows)
+* Organizing and documenting a project for GitHub
 
 ---
 
 ## 📎 Author
 
-Dusyaant R
+Pros 🚀
+
